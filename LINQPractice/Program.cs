@@ -64,3 +64,42 @@ var CarList = cars.GetCars();
 //}
 
 #endregion
+
+#region Sorting
+//var TestOrderBy = CarList.OrderBy(x => x.Amount);
+//Console.WriteLine("TestOrderBy");
+//foreach (var Car in TestOrderBy)
+//{
+//    Console.WriteLine(Car.Name + "     " + Car.Amount.ToString());
+//}
+
+
+//var TestOrderByDescending = CarList.OrderByDescending(x => x.Amount);
+//Console.WriteLine("TestOrderByDescending ");
+
+//foreach (var Car in TestOrderByDescending)
+//{
+//    Console.WriteLine(Car.Name + "     " + Car.Amount.ToString());
+//}
+
+
+//var TestThenBy = CarList.OrderBy(x => x.Amount).ThenBy(x=>x.Name);
+//Console.WriteLine("TestThenBy");
+
+//foreach (var Car in TestThenBy)
+//{
+//    Console.WriteLine(Car.Name + "     " + Car.Amount.ToString());
+//}
+
+//var TestReverse = CarList.OrderBy(x => x.Amount).Reverse();
+//Console.WriteLine("TestReverse");
+
+//foreach (var Car in TestReverse)
+//{
+//    Console.WriteLine(Car.Name + "     " + Car.Amount.ToString());
+//}
+
+#endregion
+
+
+
