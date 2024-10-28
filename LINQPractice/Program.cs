@@ -6,6 +6,7 @@ using System.Collections;
 var cars = new Repository();
 
 var CarList = cars.GetCars();
+var CarType = cars.GetCarType();
 
 #region deferred and Immediat execution
 
@@ -35,7 +36,6 @@ var CarList = cars.GetCars();
 //}
 
 #endregion
-
 
 #region Filtering
 //var TestWhere = CarList.Where(x => x.Name.StartsWith("P")).ToList();
@@ -137,6 +137,39 @@ var CarList = cars.GetCars();
 
 #endregion
 
+#region Join
+
+////jon
+//var Car = CarList.Join(CarType, p => p.CarType, c => c.Id, (car, CarType) => new
+//{
+//    CarType = CarType.Name,
+//    CarName = car.Name
+//});
+
+//foreach (var car in Car)
+//{
+//    Console.WriteLine(car.CarType + ":    " + car.CarName);
+//}
+
+////Grouping Join
+//var Car = CarType.GroupJoin(CarList, p => p.Id, c => c.CarType, (carType, Car)=> new
+//{
+//    CarType = carType.Name,
+//    CarName = Car.Select(carType => carType.Name)
+//});
+
+//foreach (var car in Car)
+//{
+//    Console.WriteLine(car.CarType);
+
+//    foreach(var c in car.CarName)
+//    {
+//        Console.WriteLine(c);
+//    }
+
+//    Console.WriteLine("--------------------------------");
+//}
 
 
+#endregion
 

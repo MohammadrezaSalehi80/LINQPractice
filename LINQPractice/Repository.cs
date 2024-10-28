@@ -4,16 +4,32 @@
 public class Repository
 {
     //create Test Data
+    List<CarType> _carType;
     List<CarModel> _models;
     public Repository()
     {
         _models = new List<CarModel>();
+        _carType = new List<CarType>();
+        _carType.Add(new CarType()
+        {
+            Id = 1,
+            Name = "CityCar"
+        });
+
+        _carType.Add(new CarType()
+        {
+            Id = 2,
+            Name = "Sedan"
+        });
+
+
         _models.Add(new CarModel()
         {
             Id = 1,
             Name = "Pride",
             Amount = 2000,
-            Country = "Iran"
+            Country = "Iran",
+            CarType = 1
         });
 
         _models.Add(new CarModel()
@@ -21,23 +37,26 @@ public class Repository
             Id = 2,
             Name = "BMW",
             Amount = 20000,
-            Country = "Germany"
+            Country = "Germany",
+            CarType = 2
         });
 
         _models.Add(new CarModel()
         {
-            Id = 2,
+            Id = 3,
             Name = "Benz",
             Amount = 25000,
-            Country = "Germany"
+            Country = "Germany",
+            CarType = 2
         });
 
         _models.Add(new CarModel()
         {
-            Id = 2,
+            Id = 4,
             Name = "Peykan",
             Amount = 1000,
-            Country = "Iran"
+            Country = "Iran",
+            CarType = 1
         });
 
 
@@ -46,6 +65,11 @@ public class Repository
     public List<CarModel> GetCars()
     {
         return _models;
+    }
+
+    public List<CarType> GetCarType()
+    {
+        return _carType;
     }
 
     public void Add(CarModel model)
