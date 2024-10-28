@@ -173,3 +173,16 @@ var CarType = cars.GetCarType();
 
 #endregion
 
+#region Projection
+
+//var carName = CarList.Select(x => x.Name);
+
+//foreach (var car in carName)
+//{
+//    Console.WriteLine(carName);
+//}
+//List<int> ints = new List<int>() { 1, 5, 8, 4, 6, 3, 8 };
+//var c = ints.SelectMany(x => x % 2 == 0);
+
+#endregion
+
