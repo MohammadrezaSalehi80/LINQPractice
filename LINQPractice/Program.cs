@@ -101,5 +101,42 @@ var CarList = cars.GetCars();
 
 #endregion
 
+#region Grouping
+
+////Group By is Deferred
+//var car = CarList.GroupBy(x=>x.Country);
+
+//foreach (var Country in car)
+//{
+//    Console.WriteLine(Country.Key);
+
+//    foreach (var CarItem in Country)
+//    {
+//        Console.WriteLine(CarItem.Name);
+//    }
+
+//    Console.WriteLine("------------------------");
+//}
+
+
+////Lookup is Immediat
+//var car = CarList.ToLookup(x => x.Country);
+
+//foreach (var Country in car)
+//{
+//    Console.WriteLine(Country.Key);
+
+//    foreach (var CarItem in Country)
+//    {
+//        Console.WriteLine(CarItem.Name);
+//    }
+
+//    Console.WriteLine("------------------------");
+//}
+
+
+#endregion
+
+
 
 

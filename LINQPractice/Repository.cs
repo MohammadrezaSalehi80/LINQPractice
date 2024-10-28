@@ -12,21 +12,32 @@ public class Repository
         {
             Id = 1,
             Name = "Pride",
-            Amount = 2000
+            Amount = 2000,
+            Country = "Iran"
         });
 
         _models.Add(new CarModel()
         {
             Id = 2,
             Name = "BMW",
-            Amount = 20000
+            Amount = 20000,
+            Country = "Germany"
         });
 
         _models.Add(new CarModel()
         {
             Id = 2,
             Name = "Benz",
-            Amount = 25000
+            Amount = 25000,
+            Country = "Germany"
+        });
+
+        _models.Add(new CarModel()
+        {
+            Id = 2,
+            Name = "Peykan",
+            Amount = 1000,
+            Country = "Iran"
         });
 
 
